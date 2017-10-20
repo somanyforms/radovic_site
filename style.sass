@@ -1,0 +1,183 @@
+$dark-something: #1d3a43
+$green-something: #0c8066
+
+*
+  box-sizing: border-box
+  font-family: 'Raleway', sans-serif
+
+body
+  margin: 0
+  padding: 0
+
+img
+  pointer-events: none
+  -moz-user-select: none
+  -webkit-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+h2
+  font-size: 2em
+  @media only screen and (max-width: 760px)
+    text-align: center
+
+  span
+    display: inline-block
+    line-height: 1.5em
+    border-bottom: 1px solid $green-something
+
+.container
+  position: relative
+  max-width: 1200px
+  // background-color: pink //----------------------------------------------------
+  margin: auto
+  background-image: url("img/phot.png")
+  background-position: 100% 100%
+  background-repeat: no-repeat
+  @media only screen and (max-width: 1000px)
+    background-image: none
+
+.content
+  width: 94%
+  margin: auto
+
+.lang-nav
+  position: absolute
+  top: 5vh
+  right: 0
+  text-align: right
+  a
+    display: inline-block
+    padding: 5px
+    // background-color: red //---------------------------------------------------
+    color: $green-something
+    font-weight: 600
+    text-decoration: none
+    text-transform: uppercase
+    font-size: 1.3em
+
+.about
+  position: absolute
+  padding-bottom: 50px
+  bottom: 10%
+  text-align: right
+  // background-color: white //---------------------------------------------------
+  p
+    font-size: 1.3em
+    @media only screen and (max-width: 760px)
+      text-align: center
+
+.top
+  position: relative
+  height: 100vh
+  // background-color: lightgreen //----------------------------------------------
+  background-image: url("img/image-top.png")
+  background-repeat: no-repeat
+  background-position: 30% 20%
+  border-bottom: solid 1px #363636
+  @media only screen and (max-width: 1000px)
+    background-size: 640px
+  @media only screen and (max-width: 760px)
+    background-size: 480px
+
+.top-border
+  z-index: 1
+  position: fixed
+  top: 0
+  height: 4vh
+  width: 100%
+  background-color: $dark-something
+
+.footer
+  height: 70px
+
+  background-color: $dark-something
+  color: white
+  text-align: center
+  p
+    line-height: 70px
+    vertical-align: middle
+    margin: 0
+
+.artwork
+  .artwork-content
+    max-width: 840px
+    margin: 0 auto
+    // background-color: lightblue //---------------------------------------------
+    .img-item
+      width: 100%
+      margin: 20px 0
+
+.services
+  position: relative
+  margin-top: 80px
+
+  .services-content
+    &::after
+      content: ""
+      display: table
+      clear: both
+    padding-bottom: 50px
+    .item
+      float: left
+      padding: 80px 30px 0
+      width: 33.3%
+      @media only screen and (max-width: 640px)
+        width: 100%
+        margin-top: 50px
+        padding: 80px 20% 0
+      background-image: url("img/placeholder.png")
+      background-size: 60px
+      background-repeat: no-repeat
+      background-position: top center
+      // &:first-child
+      //   border-right: solid #363636 1px
+      // &:last-child
+      //   border-left: solid #363636 1px
+      p
+        margin: 0
+        font-size: 1.3em
+        text-align: center
+
+  border-top: solid 1px #363636
+  border-bottom: solid 1px #363636
+
+.contact
+  position: relative
+  // background-color: lightgray //-----------------------------------------------
+  padding-bottom: 40px
+  .contact-content
+    &::after
+      content: ""
+      display: table
+      clear: both
+    .item
+      // background-color: red //-------------------------------------------------
+      height: 90px
+      float: left
+      padding: 0 30px
+      width: 40%
+      padding-left: 80px
+      @media only screen and (max-width: 1000px)
+        width: 50%
+      @media only screen and (max-width: 760px)
+        width: 100%
+        text-align: center
+        padding-left: 0
+      &:nth-child(1)
+        background-image: url("img/ph.png")
+      &:nth-child(2)
+        background-image: url("img/em.png")
+      background-size: 60px
+      background-repeat: no-repeat
+      background-position: left center
+
+      @media only screen and (max-width: 760px)
+        background-position: top center
+        padding-top: 50px
+        height: auto
+
+  p
+    display: inline-block
+    vertical-align: top
+    font-size: 1.3em
