@@ -11,7 +11,7 @@ $green-something: #0c8066
   -moz-user-select: none
   -ms-user-select: none
   user-select: none
-  
+
 body
   margin: 0
   padding: 0
@@ -63,18 +63,24 @@ h2
     font-weight: 600
     text-decoration: none
     text-transform: uppercase
-    font-size: 1.3em
+    font-size: 1.2em
     cursor: pointer
+    @media only screen and (max-width: 760px)
+      font-size: 1em
 
 .about
   position: absolute
   padding-bottom: 50px
   bottom: 10%
   text-align: right
+  @media only screen and (max-width: 760px)
+    padding-bottom: 0
+    bottom: 5%
   // background-color: white //---------------------------------------------------
   p
     font-size: 1.3em
     @media only screen and (max-width: 760px)
+      font-size: 1em
       text-align: center
 
 .top
@@ -94,9 +100,11 @@ h2
   z-index: 1
   position: fixed
   top: 0
-  height: 4vh
+  height: 2.2em
   width: 100%
   background-color: $dark-something
+  @media only screen and (max-width: 760px)
+    height: 2em
 
 .footer
   height: 70px
