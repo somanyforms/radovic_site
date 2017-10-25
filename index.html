@@ -9,19 +9,23 @@
   </head>
   <body>
     <div class="top-border">
-
+      <div class="container">
+        <div class="content">
+          <div class="lang-nav">
+            <a onclick="setLanguage('mn')">mn</a>
+            <a onclick="setLanguage('en')">en</a>
+            <a onclick="setLanguage('sw')">sw</a>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="container">
       <div class="content">
 
         <div class="top">
-          <div class="lang-nav">
-            <a href="#">mn</a>
-            <a href="#">en</a>
-            <a href="#">sw</a>
-          </div>
+
           <div class="about">
-            <h2>A<span>bou</span>t</h2>
+            <h2 id="h2-about">A<span>bou</span>t</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et feugiat libero, nec fermentum urna. Aenean dictum tempus nisi, ac feugiat dolor auctor eget. Aenean rutrum scelerisque dolor vel facilisis. Curabitur vehicula, nulla mattis volutpat consectetur, diam nulla laoreet eros, quis dignissim enim nulla sed mauris. Nulla nec dolor massa. Donec pharetra viverra ante, et mollis ante consectetur non. Nunc non dolor tempus, interdum nisi semper, facilisis risus. </p>
           </div>
         </div>
@@ -37,7 +41,7 @@
         </div>
 
         <div class="services">
-          <h2>S<span>ervice</span>s</h2>
+          <h2 id="h2-services">S<span>ervice</span>s</h2>
           <div class="services-content">
             <div class="item">
               <p>Printing and typesetting industry.</p>
@@ -73,4 +77,6 @@
       <p>&copy;Copyright 2017</p>
     </div>
   </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="app_lan.js"></script>
 </html>
