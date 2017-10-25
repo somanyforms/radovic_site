@@ -11,7 +11,7 @@ function getLanguage() {
 function setLanguage(lang) {
   localStorage.setItem('language', lang);
   $.ajax({
-    url:  '/lang/' +  localStorage.getItem('language') + '.json',
+    url:  'lang/' +  localStorage.getItem('language') + '.json',
     dataType: 'json',
     success: function (lang) {
       console.log(lang);
@@ -20,7 +20,7 @@ function setLanguage(lang) {
   } });
 }
 
-$(document).ready(function(){
+$(function(){
   getLanguage();
 });
 
